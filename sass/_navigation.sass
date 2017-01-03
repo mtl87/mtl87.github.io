@@ -67,9 +67,27 @@ footer
   width: 100%
   background: $faint-grey
   padding: 44px 0
-  font-family: $secondary-font
-  color: $charcoal
   font-size: 14px
   font-size: 1.4rem
   a
     font-weight: $bold
+  p.copyright
+    font-family: $secondary-font
+    color: $charcoal
+  .container
+    &:last-child
+      justify-content: space-between
+      nav
+        li
+          &:first-child
+            margin-left: 0px
+        a
+          font-size: 25px
+          font-size: 2.5rem
+          color: $light-charcoal
+          padding: 0 10px
+          &:first-child
+            padding-left: 0px
+            margin-left: 0px
+          &:hover
+            color: $secondary-color
