@@ -4,7 +4,7 @@ html {
   font-size: 62.5%;
   color: #1F2023; }
   html a {
-    color: #3F4E64;
+    color: #313D51;
     text-decoration: none; }
     html a:hover {
       color: #D26A04; }
@@ -117,15 +117,18 @@ nav {
 
 footer {
   width: 100%;
-  background: #f4f4f4;
+  background: #313D51;
   padding: 44px 0;
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  color: #fff; }
   footer a {
     font-weight: 700; }
   footer p.copyright {
     font-family: "PT Serif", serif;
-    color: #696767; }
+    color: #999; }
+  footer a {
+    color: #999; }
   footer .container:last-child {
     justify-content: space-between; }
     footer .container:last-child nav li:first-child {
@@ -291,6 +294,7 @@ footer {
             font-size: 2.4rem; } }
 
 .container.block-bio {
+  justify-content: center;
   padding: 50px 0; }
   .container.block-bio .img {
     display: flex;
@@ -298,12 +302,12 @@ footer {
     .container.block-bio .img img {
       height: 150px;
       width: 150px;
-      border-radius: 50%;
-      border: 1px solid #f4f4f4; }
-      @media (min-width: 1280px) {
-        .container.block-bio .img img {
-          height: 200px;
-          width: 200px; } }
+      border-radius: 50%; }
+  .container.block-bio .logo-bar div {
+    width: 50%; }
+    @media (min-width: 768px) {
+      .container.block-bio .logo-bar div {
+        width: 25%; } }
 
 .block-title .container {
   display: block; }
@@ -315,7 +319,8 @@ footer {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px 0; }
+  padding: 0 0 20px 0;
+  margin: 0px; }
 
 .container.block-case-study {
   padding-bottom: 40px; }
@@ -323,6 +328,8 @@ footer {
     .container.block-case-study {
       padding-bottom: 40px;
       flex-direction: row-reverse; } }
+  .container.block-case-study a {
+    color: #D26A04; }
   .container.block-case-study .content h2 {
     margin-bottom: 0; }
   .container.block-case-study .sidebar {
